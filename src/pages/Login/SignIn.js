@@ -10,6 +10,8 @@ import {View,
       Keyboard
     } from 'react-native';
 
+
+ 
 export default function App() {
   const [offset] = useState(new Animated.ValueXY({x0, y: 95}))
   const [opacity] = useState( new Animated.Value(0))
@@ -87,7 +89,7 @@ export default function App() {
   }
 
 
-
+  export default function SignIn() {
   return (
 
     <KeyboardAvoidingView style={styles.background}>
@@ -141,6 +143,7 @@ export default function App() {
     </KeyboardAvoidingView>
 
   );
+}
 }
 
 const styles = StyleSheet.create({
